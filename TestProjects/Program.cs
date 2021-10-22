@@ -6,6 +6,36 @@ namespace TestProjects
     {
         static void Main(string[] args)
         {
+            //InterfacesIntro();
+            //interface kendi başına new lenemez. Soyut nesneler tek başına newlenemez.
+            //IPerson person = new Customer();
+
+            //InterfaceDemo();
+
+            ICustomerDal[] customerDals = new ICustomerDal[2] {
+                new SqlServerCustomerDal(),
+                new OracleServerCustomerDal()
+            };
+
+            foreach (var customerdal in customerDals)
+            {
+                customerdal.Add();
+
+            }
+
+            Console.ReadLine();
+
+        }
+
+        private static void InterfaceDemo()
+        {
+            CustomerManager customerManager = new CustomerManager();
+            customerManager.Add(new SqlServerCustomerDal());
+        }
+
+        private static void InterfacesIntro()
+        {
+            //interface örneği;
             PersonManager personManager = new PersonManager();
             Customer customer = new Customer
             {
@@ -14,10 +44,19 @@ namespace TestProjects
                 LastName = "Nur",
                 Address = "Ankara"
             };
+
+            Student student = new Student
+            {
+                Id = 1,
+                FirstName = "Can",
+                LastName = "Nur",
+                Department = "BTGM"
+            };
             personManager.Add(customer);
 
-            personManager.AddPerson()
+            personManager.AddPerson(student);
         }
+
         interface IPerson
         {
             int Id { get; set; }
@@ -49,7 +88,7 @@ namespace TestProjects
             }
             public void AddPerson(IPerson person)
             {
-                Console.WriteLine(per.FirstName);
+                Console.WriteLine(person.FirstName);
             }
 
 
