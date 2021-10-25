@@ -41,9 +41,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecapDemoDama", "RecapDemoD
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestProjects_Interface", "TestProjects\TestProjects_Interface.csproj", "{4CE0D0AE-AB34-4419-A6BB-3FD9EFD82D76}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProjects_Implementation", "TestProjects_Implementation\TestProjects_Implementation.csproj", "{4053E4E9-D4BA-4C6B-8F3F-79CB7F323DDB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestProjects_Implementation", "TestProjects_Implementation\TestProjects_Implementation.csproj", "{4053E4E9-D4BA-4C6B-8F3F-79CB7F323DDB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProjects_Inheritance", "TestProjects_Inheritance\TestProjects_Inheritance.csproj", "{6D5353D3-28F6-4C50-9453-BEEA39987234}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestProjects_Inheritance", "TestProjects_Inheritance\TestProjects_Inheritance.csproj", "{6D5353D3-28F6-4C50-9453-BEEA39987234}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProjects_InterfaceReal", "TestProjects_Interface_Real\TestProjects_InterfaceReal.csproj", "{976E028F-1DB7-4F2B-AAEF-1B429FA74753}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -135,6 +137,10 @@ Global
 		{6D5353D3-28F6-4C50-9453-BEEA39987234}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D5353D3-28F6-4C50-9453-BEEA39987234}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D5353D3-28F6-4C50-9453-BEEA39987234}.Release|Any CPU.Build.0 = Release|Any CPU
+		{976E028F-1DB7-4F2B-AAEF-1B429FA74753}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{976E028F-1DB7-4F2B-AAEF-1B429FA74753}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{976E028F-1DB7-4F2B-AAEF-1B429FA74753}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{976E028F-1DB7-4F2B-AAEF-1B429FA74753}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
