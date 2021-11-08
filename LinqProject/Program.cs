@@ -27,7 +27,8 @@ namespace LinqProject
 
             foreach (var p in products)
             {
-                if (p.UnitPrice > 1000 && p.UnitsInStock < 5) {
+                if (p.UnitPrice > 1000 && p.UnitsInStock < 5)
+                {
                     Console.WriteLine(p.ProductName);
                 }
 
@@ -51,7 +52,7 @@ namespace LinqProject
             List<Product> filteredProducts = new List<Product>();
             foreach (var p in products)
             {
-                if(p.UnitPrice>1000 && p.UnitsInStock < 5)
+                if (p.UnitPrice > 1000 && p.UnitsInStock < 5)
                 {
                     filteredProducts.Add(p);
                 }
@@ -66,19 +67,20 @@ namespace LinqProject
         }
 
 
-    class Product
-    {
-        public int ProductId { get; set; }
-        public int CategoryId { get; set; }
-        public string ProductName { get; set; }
-        public short UnitsInStock { get; set; }
-        public int UnitPrice { get; set; }
+        class Product
+        {
+            public int ProductId { get; set; }
+            public int CategoryId { get; set; }
+            public string ProductName { get; set; }
+            public short UnitsInStock { get; set; }
+            public int UnitPrice { get; set; }
 
-    }
+        }
 
-    class Category
-    {
-        public int CategoryId { get; set; }
-        public string CategoryName { get; set; }
+        class Category
+        {
+            public int CategoryId { get; set; }
+            public string CategoryName { get; set; }
+        }
     }
 }
